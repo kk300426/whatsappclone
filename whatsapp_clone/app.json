@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "whatsapp_clone",
+    "slug": "whatsapp_clone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/user.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/whatsapp-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/user.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/whatsapp-logo.png"
+    }
+  }
+}
