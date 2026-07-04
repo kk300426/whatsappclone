@@ -8,11 +8,14 @@ import { fileURLToPath } from "url";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { v4 as uuidv4 } from "uuid";
+import dotenv from "dotenv";
 import pool from "../DataBase/db.js";
 import { initDb } from "../schema/schema.js";
 
+dotenv.config();
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const JWT_SECRET = process.env.JWT_SECRET || "whatsapp_clone_jwt_secret_2024";
 const UPLOADS_DIR = join(__dirname, "../../uploads");
 
